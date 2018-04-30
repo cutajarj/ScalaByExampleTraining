@@ -4,7 +4,7 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class SequenceGeneratorSpec extends FlatSpec with Matchers {
 
-  it should "separate the sequence with commans" in {
+  it should "separate the sequence with commas" in {
     val sequenceGenerator = new SequenceGenerator {
       override def generate(total: Int): List[Int] = List(1,2,3,4,5)
     }
