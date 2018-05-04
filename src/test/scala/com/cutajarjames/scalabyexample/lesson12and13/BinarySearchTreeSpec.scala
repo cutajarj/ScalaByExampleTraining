@@ -1,4 +1,4 @@
-package com.cutajarjames.scalabyexample.lesson12
+package com.cutajarjames.scalabyexample.lesson12and13
 
 import org.scalatest.{FlatSpec, Matchers}
 
@@ -9,7 +9,7 @@ class BinarySearchTreeSpec extends FlatSpec with Matchers {
     binarySearchTree.search(10) shouldEqual None
   }
 
-  "A BinarySearchTree" should "output the correct value" in {
+  it should "output the correct value" in {
     //val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
     val binarySearchTree:BinarySearchTree[Int,String] = null
     binarySearchTree.insert(4, "Isabel")
@@ -18,7 +18,7 @@ class BinarySearchTreeSpec extends FlatSpec with Matchers {
       .search(10) should contain("Ruth")
   }
 
-  "A BinarySearchTree" should "output correct return for all searches" in {
+  it should "output correct return for all searches" in {
     //val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
     val binarySearchTree:BinarySearchTree[Int,String] = null
     val binarySearchTreeAfterInsert = binarySearchTree.insert(4, "Isabel")
@@ -47,8 +47,7 @@ class BinarySearchTreeSpec extends FlatSpec with Matchers {
     binarySearchTreeAfterInsert.search(34) shouldEqual None
   }
 
-
-  "A BinarySearchTree" should "output overwrite if already exits" in {
+  it should "output overwrite if already exits" in {
     //val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
     val binarySearchTree:BinarySearchTree[Int,String] = null
     binarySearchTree.insert(4, "Isabel")
