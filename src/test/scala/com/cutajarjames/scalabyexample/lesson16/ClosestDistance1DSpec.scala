@@ -17,7 +17,7 @@ class ClosestDistance1DSpec extends FlatSpec with Matchers {
       Point(201,0), Point(87,0), Point(76,0), Point(32,0), Point(10,0), Point(143,0),
       Point(131,0), Point(187,0), Point(81,0), Point(67,0), Point(2,0), Point(16,0)
     )
-    ClosestDistance1D.closestDistance(points) shouldEqual 3.0
+    ClosestDistance1D.closestDistance(points) shouldEqual 1.0
   }
 
 }
