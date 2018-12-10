@@ -4,6 +4,6 @@ trait SequenceGenerator {
 
   def generate(total: Int): List[Int]
 
-  def generateStr(total: Int): String = null
+  def generateStr(total: Int): String = generate(total).mkString(",")
 
 }

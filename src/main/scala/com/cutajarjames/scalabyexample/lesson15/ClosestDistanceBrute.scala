@@ -9,7 +9,9 @@ object ClosestDistanceBrute {
     .map(_ => Point(rand.nextInt(Int.MaxValue), rand.nextInt(Int.MaxValue))).toSet.toList
 
   def closestDistanceBrute(pts: List[Point]): Double = {
-    -1.0
+    val distances = for ((pti,i) <- pts.zipWithIndex.dropRight(1);
+                         ptj <- pts.drop(i + 1)) yield pti.distanceTo(ptj)
+    distances.min
   }
 
   def main(args: Array[String]): Unit = {

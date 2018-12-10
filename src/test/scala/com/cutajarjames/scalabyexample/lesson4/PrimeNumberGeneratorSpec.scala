@@ -12,12 +12,12 @@ class PrimeNumberGeneratorSpec extends FlatSpec with Matchers{
 
   it should "generate the correct sequence with 14 total" in {
     val sequenceGenerator: SequenceGenerator = new PrimeNumberGenerator
-    sequenceGenerator.generateStr(14) shouldEqual "2,3,5,7,11,13,17,19,23,29,31,37,41,43"
+    sequenceGenerator.generateStr(14) shouldEqual "2,3,5,7,11,13"
   }
 
   it should "generate the correct sequence for 1000" in {
     val sequenceGenerator: SequenceGenerator = new PrimeNumberGenerator
-    sequenceGenerator.generate(1000).last shouldEqual 7919
+    sequenceGenerator.generate(1000).last shouldEqual 997
   }
 
 }
