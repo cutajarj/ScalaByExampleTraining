@@ -10,7 +10,7 @@ object ClosestDistance1D {
 
   def closestDistanceBrute(pts: List[Point]): Double = {
     val distances = for ((pti,i) <- pts.zipWithIndex.dropRight(1); ptj <- pts.drop(i + 1)) yield pti.distanceTo(ptj)
-    distances.min
+    distances.min(Ordering.Double.TotalOrdering)
   }
 
 }
