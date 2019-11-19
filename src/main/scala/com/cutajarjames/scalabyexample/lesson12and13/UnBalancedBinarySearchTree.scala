@@ -36,7 +36,7 @@ class UnBalancedBinarySearchTree[K, V](root: Node[K, V], ord: Ordering[K]) exten
   }
 
   override def foreachBFS(f: (K, V) => Unit): Unit = {
-    val sq = Stream.iterate(Queue(root)) {q =>
+    val sq = LazyList.iterate(Queue(root)) {q =>
       val (node, tail) = q.dequeue
       tail ++ node.left ++ node.right
     }
