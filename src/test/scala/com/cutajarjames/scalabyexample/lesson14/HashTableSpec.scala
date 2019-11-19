@@ -4,14 +4,14 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class HashTableSpec extends FlatSpec with Matchers {
   "A HashTable" should "output None if not found" in {
-    //val hashTable: HashTable[Int, String] = HashTrie(5)
-    val hashTable:HashTable[Int,String] = null
+    val hashTable: HashTable[Int, String] = HashTrie(5)
+    //val hashTable:HashTable[Int,String] = null
     hashTable.search(10) shouldEqual None
   }
 
   it should "output the correct value" in {
-    //val hashTable: HashTable[Int, String] = HashTrie(5)
-    val hashTable:HashTable[Int,String] = null
+    val hashTable: HashTable[Int, String] = HashTrie(5)
+    //val hashTable:HashTable[Int,String] = null
     hashTable.insert(4, "Isabel")
       .insert(8, "Michelle")
       .insert(10, "Ruth")
@@ -19,8 +19,8 @@ class HashTableSpec extends FlatSpec with Matchers {
   }
 
   it should "output correct return for all searches" in {
-    //val hashTable: HashTable[Int, String] = HashTrie(5)
-    val hashTable:HashTable[Int,String] = null
+    val hashTable: HashTable[Int, String] = HashTrie(5)
+    //val hashTable:HashTable[Int,String] = null
     val hashTableAfterInsert = hashTable.insert(4, "Isabel")
       .insert(8, "Michelle")
       .insert(10, "Ruth")
@@ -48,8 +48,8 @@ class HashTableSpec extends FlatSpec with Matchers {
   }
 
   it should "output overwrite if already exits" in {
-    //val hashTable: HashTable[Int, String] = HashTrie(5)
-    val hashTable:HashTable[Int,String] = null
+    val hashTable: HashTable[Int, String] = HashTrie(5)
+    //val hashTable:HashTable[Int,String] = null
     hashTable.insert(4, "Isabel")
       .insert(8, "Michelle")
       .insert(10, "Ruth")
@@ -58,8 +58,8 @@ class HashTableSpec extends FlatSpec with Matchers {
   }
 
   it should "output overwrite if already exits, linked list check" in {
-    //val hashTable: HashTable[Int, String] = HashTrie(2)
-    val hashTable:HashTable[Int,String] = null
+    val hashTable: HashTable[Int, String] = HashTrie(2)
+    //val hashTable:HashTable[Int,String] = null
     hashTable.insert(4, "Isabel")
       .insert(8, "Michelle")
       .insert(10, "Ruth")

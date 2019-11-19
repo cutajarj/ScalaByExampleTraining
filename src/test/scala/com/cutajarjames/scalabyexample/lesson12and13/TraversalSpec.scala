@@ -8,8 +8,8 @@ class TraversalSpec extends FlatSpec with Matchers {
   "A DFS in a BinarySearchTree" should "with just one item should output just that item" in {
     val listBuffer: ListBuffer[(Int, String)] = ListBuffer[(Int, String)]()
 
-    //val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
-    val binarySearchTree: BinarySearchTree[Int, String] = null
+    val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
+    //val binarySearchTree: BinarySearchTree[Int, String] = null
     binarySearchTree.foreachDFS((key, value) => {
       listBuffer += ((key, value))
     })
@@ -18,10 +18,10 @@ class TraversalSpec extends FlatSpec with Matchers {
   }
 
   it should "with loads of items should output in order" in {
-    //val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
+    val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
     val listBuffer: ListBuffer[(Int, String)] = ListBuffer[(Int, String)]()
 
-    val binarySearchTree: BinarySearchTree[Int, String] = null
+    //val binarySearchTree: BinarySearchTree[Int, String] = null
     binarySearchTree.insert(4, "Isabel")
       .insert(8, "Michelle")
       .insert(10, "Ruth")
@@ -43,8 +43,8 @@ class TraversalSpec extends FlatSpec with Matchers {
   "A BFS in a BinarySearchTree" should "with just one item should output just that item" in {
     val listBuffer: ListBuffer[(Int, String)] = ListBuffer[(Int, String)]()
 
-    //val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
-    val binarySearchTree: BinarySearchTree[Int, String] = null
+    val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
+    //val binarySearchTree: BinarySearchTree[Int, String] = null
     binarySearchTree.foreachBFS((key, value) => {
       listBuffer += ((key, value))
     })
@@ -53,10 +53,10 @@ class TraversalSpec extends FlatSpec with Matchers {
   }
 
   it should "with loads of items should output in order" in {
-    //val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
+    val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
     val listBuffer: ListBuffer[(Int, String)] = ListBuffer[(Int, String)]()
 
-    val binarySearchTree: BinarySearchTree[Int, String] = null
+    //val binarySearchTree: BinarySearchTree[Int, String] = null
     binarySearchTree.insert(4, "Isabel")
       .insert(8, "Michelle")
       .insert(10, "Ruth")

@@ -4,14 +4,14 @@ import org.scalatest.{FlatSpec, Matchers}
 
 class BinarySearchTreeSpec extends FlatSpec with Matchers {
   "A BinarySearchTree" should "output None if not found" in {
-    //val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
-    val binarySearchTree:BinarySearchTree[Int,String] = null
+    val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
+    //val binarySearchTree:BinarySearchTree[Int,String] = null
     binarySearchTree.search(10) shouldEqual None
   }
 
   it should "output the correct value" in {
-    //val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
-    val binarySearchTree:BinarySearchTree[Int,String] = null
+    val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
+    //val binarySearchTree:BinarySearchTree[Int,String] = null
     binarySearchTree.insert(4, "Isabel")
       .insert(8, "Michelle")
       .insert(10, "Ruth")
@@ -19,8 +19,8 @@ class BinarySearchTreeSpec extends FlatSpec with Matchers {
   }
 
   it should "output correct return for all searches" in {
-    //val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
-    val binarySearchTree:BinarySearchTree[Int,String] = null
+    val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
+    //val binarySearchTree:BinarySearchTree[Int,String] = null
     val binarySearchTreeAfterInsert = binarySearchTree.insert(4, "Isabel")
       .insert(8, "Michelle")
       .insert(10, "Ruth")
@@ -48,8 +48,8 @@ class BinarySearchTreeSpec extends FlatSpec with Matchers {
   }
 
   it should "output overwrite if already exits" in {
-    //val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
-    val binarySearchTree:BinarySearchTree[Int,String] = null
+    val binarySearchTree: BinarySearchTree[Int, String] = UnBalancedBinarySearchTree(5, "James")
+    //val binarySearchTree:BinarySearchTree[Int,String] = null
     binarySearchTree.insert(4, "Isabel")
       .insert(8, "Michelle")
       .insert(10, "Ruth")
