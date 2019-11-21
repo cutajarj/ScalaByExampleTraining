@@ -6,17 +6,17 @@ import org.scalatest.{FlatSpec, Matchers}
 class PrimeNumberGeneratorSpec extends FlatSpec with Matchers{
 
   it should "generate an empty list if 0 is specified" in {
-    val sequenceGenerator: SequenceGenerator = new PrimeNumberGenerator
+    val sequenceGenerator: SequenceGenerator = new PrimeNumberLazyGenerator
     sequenceGenerator.generateStr(0) shouldEqual ""
   }
 
   it should "generate the correct sequence with 14 total" in {
-    val sequenceGenerator: SequenceGenerator = new PrimeNumberGenerator
+    val sequenceGenerator: SequenceGenerator = new PrimeNumberLazyGenerator
     sequenceGenerator.generateStr(14) shouldEqual "2,3,5,7,11,13"
   }
 
   it should "generate the correct sequence for 1000" in {
-    val sequenceGenerator: SequenceGenerator = new PrimeNumberGenerator
+    val sequenceGenerator: SequenceGenerator = new PrimeNumberLazyGenerator
     sequenceGenerator.generate(1000).last shouldEqual 997
   }
 
