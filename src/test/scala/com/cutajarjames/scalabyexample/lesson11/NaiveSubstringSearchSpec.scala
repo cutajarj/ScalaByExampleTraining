@@ -10,6 +10,13 @@ class NaiveSubstringSearchSpec extends FlatSpec with Matchers {
     (new NaiveSubstringSearch).substringSearch(text, pattern) shouldEqual -1
   }
 
+  "The NaiveSubstringSearch " should "output -1 if not found" in {
+    val text = "Sally sells seashells on the seashoro"
+    val pattern = "rockets"
+
+    (new NaiveSubstringSearch).substringSearch(text, pattern) shouldEqual -1
+  }
+
   "The NaiveSubstringSearch " should "output a correct index if found at the end" in {
     val text = "Sally sells seashells on the seashore"
     val pattern = "seashore"
